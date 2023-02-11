@@ -1,0 +1,161 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+#insta{
+    position: relative;
+    width: 21%;
+    height: 77%;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 5px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+#insta::-webkit-scrollbar{
+    display: none;
+}
+#stories{
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    white-space: nowrap;
+    margin-top: 5px;  
+} 
+.story{
+    width: 60px;
+    height: 60px;
+    background-color: orangered;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid orangered;
+    
+}
+.story img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#fs{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: none;
+    z-index: 99999;
+}
+#runtime{
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.308);
+    border-radius: 10px;
+}
+#progress{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+#storyimg{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+input{
+    position: absolute;
+    bottom: -.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 24px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    font-weight: bold;
+
+}
+#insta #post{
+    position: absolute;
+    width: 300px;
+    height: 460px;
+    background-color: rgb(255, 255, 255);
+    top: 59.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid rgba(128, 128, 128, 0.329);
+}
+#post #name{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+#name #img{
+    display: flex;
+}
+#img #pimg{
+    width: 40px;
+    height: 40px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1wV_0y0S670F5nVyH5dT2WNeTK1KiYHT7FA&usqp=CAU);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+#img h3{
+    margin-left: 10px;
+    margin-top: 17px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#name i{
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#post #image{
+    position: relative;
+    width: 100%;
+    height: 75%;
+    background-image: url(https://wallpapercave.com/wp/wp4572650.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+#post i{
+    margin-left: 10px;
+    font-size: 25px;
+}
+#image i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: white;
+    opacity: 0;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    color: rgba(221, 7, 61, 0.637);
+}
